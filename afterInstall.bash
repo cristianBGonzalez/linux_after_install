@@ -2,9 +2,9 @@
 #By: Cristian Baruch Gonzalez
 #updating linux 14.04 after fresh install
 
-######################################################################
-#First edit /etc/apt/sources.lists file to include Canonical Partners# #repository							     #
-######################################################################
+#################################################################################
+#First edit /etc/apt/sources.lists file to include Canonical Partners repository#
+#################################################################################
 
 sudo cp /etc/apt/sources.lists /etc/apt/sources.lists.bck
 cat << END > /etc/apt/sources.lists
@@ -93,13 +93,14 @@ sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 
 sudo apt-get update
 
-########################################################################
-#install git, unbuntu tweak, gnome shell, vlc, handbrake, common codecs   #
-#and enable dvd playback, Flash Support On Browsers, deluge, skype, steam,# #wine, Archive Management Apps, Y PPA Manager, Java, Web Cam Software     #
-# (Cheese), digital photo management application(digiKam), Gimp, Compiz   #
-########################################################################
+##############################################################################
+#install git, unbuntu tweak, gnome shell, vlc, handbrake, common codecs and  #
+#enable dvd playback, deluge, skype, steam, wine, Archive Management Apps,   #
+#Y PPA Manager, Java, Web Cam Software (Cheese),                             #
+#digital photo management application(digiKam), Gimp, Compiz                 #
+##############################################################################
 
-sudo apt-get -y install git ubuntu-tweak gnome-shell ubuntu-gnome-desktop vlc handbrake-gtk gstreamer0.10-plugins-ugly gxine libdvdread4 totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321 gstreamer1.0-libav flashplugin-installer deluge skype steam wine unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller openjdk-7-jdk cheese digikam gimp gimp-data gimp-plugin-registry gimp-data-extras compiz compizconfig-settings-manager compiz-plugins
+sudo apt-get -y install git ubuntu-tweak gnome-shell ubuntu-gnome-desktop vlc handbrake-gtk gstreamer0.10-plugins-ugly gxine libdvdread4 totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321 gstreamer1.0-libav deluge skype steam wine unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller openjdk-7-jdk cheese digikam gimp gimp-data gimp-plugin-registry gimp-data-extras compiz compizconfig-settings-manager compiz-plugins
 
 ######################
 #enable encrypted dvd#
